@@ -30,7 +30,7 @@ button{
     margin: 20px;
 }
 button:hover{
-    box-shadow: inset 10px 5px 10px gray, inset -5px -5px 8px beige;
+    box-shadow: none;
 }
 input[type=text]{
     height: 40px;
