@@ -1,5 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+
+dotenv.config()
+
 var app = express();
 app.set("view engine", "ejs");
 app.use(express.static('public'));
@@ -17,6 +21,6 @@ app.post("/", function(req, res){
     res.redirect("/");
 });
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log("Server started.");
 });
